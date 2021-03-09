@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0DC93A16"
+    tools:context=".ChosenDrinkSecondActivity">
+
+<!--This UI activity is for the drink suggested after the user answer from question spinner-->
+
+    <ImageButton
+        android:id="@+id/gobackBtn"
+        android:layout_width="43dp"
+        android:layout_height="39dp"
+        android:background="@color/frame"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:tint="@color/text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055"
+        android:contentDescription="@string/imgViewContentDesscription" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="292dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="516dp"
+        android:background="@drawable/frame_bottom_round"
+        android:backgroundTint="#ba124d"
+        android:contentDescription="@string/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/usersDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/drinkName1"
+        android:textColor="#ffecd4"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="97dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="628dp" />
+
+    <TextView
+        android:id="@+id/surprise_drink_text"
+        android:layout_width="201dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="@string/surprise_drink_text"
+        android:textColor="@color/text_color"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="210dp"
+        android:layout_height="187dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404"
+        app:srcCompat="@drawable/recommended_drinks"
+        android:contentDescription="@string/imgViewContentDesscription" />
+
+    <Button
+        android:id="@+id/ingredientBtn"
+        android:layout_width="218dp"
+        android:layout_height="60dp"
+        android:layout_gravity="start"
+        android:background="@drawable/rounded_btn"
+        android:backgroundTint="@color/main2"
+        android:enabled="true"
+        android:fontFamily="@font/roboto_black"
+        android:text="@string/see_ingredients"
+        android:textColor="#ffecd4"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.527" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
